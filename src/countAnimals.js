@@ -20,6 +20,4 @@ function countAnimals(animal) {
 
 module.exports = countAnimals;
 
-// console.log(countAnimals());
-// console.log(countAnimals({ specie: 'penguins' }));
-// console.log(countAnimals({ specie: 'elephants', sex: 'male' }));
+// feito exercicios com ajuda de Christian Lessa e Denilson Santuchi
