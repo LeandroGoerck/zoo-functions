@@ -1,4 +1,4 @@
-const { species } = require('../data/zoo_data');
+// const { species } = require('../data/zoo_data');
 const data = require('../data/zoo_data');
 
 function getSpecieByLocationList(location) {
@@ -8,11 +8,12 @@ function getSpecieByLocationList(location) {
   return array;
 }
 
-function getSpecieNameBySpecie(specieName) {
-  const arrayNames = [];
-  const specieObjs = species.filter((specie) => specie.name === specieName);
-  return specieObjs.forEach((specieObj) => specieObj.residents.map((resident) => console.log(resident.name)));
-}
+// function getSpecieNameBySpecie(specieName) {
+//   const arrayNames = [];
+//   const specieObjs = species.filter((specie) => specie.name === specieName);
+//   return specieObjs.forEach((specieObj) => specieObj.residents
+//     .map((resident) => console.log(resident.name)));
+// }
 
 function getAnimalMap(options) {
   if (options !== undefined || !options) {
@@ -37,4 +38,4 @@ module.exports = getAnimalMap;
 // const options = { sex: 'female' };
 // console.log(getAnimalMap(options));
 
-console.log(getSpecieNameBySpecie('lions'));
+// console.log(getSpecieNameBySpecie('lions'));
