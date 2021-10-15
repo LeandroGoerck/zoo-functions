@@ -12,7 +12,7 @@ function countEntrants(entrants) {
 }
 
 function calculateEntry(entrants) {
-  if (!entrants || Object.keys(entrants).length < 1) {
+  if (!entrants || Object.keys(entrants).length === 0) {
     return 0;
   }
   const obj = countEntrants(entrants);
@@ -23,3 +23,5 @@ function calculateEntry(entrants) {
 }
 
 module.exports = { calculateEntry, countEntrants };
+
+// Concluido com a ajuda de Christian Lessa e Denilson Santuchi
