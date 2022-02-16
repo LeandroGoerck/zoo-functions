@@ -40,7 +40,7 @@ function createResidentObject(sorted, sex) {
 }
 
 function getAnimalMap(options = {}) {
-  const { includeNames = false, sorted, sex } = options;
+  const { sorted, sex } = options;
   if (options.includeNames) {
     return createResidentObject(sorted, sex);
   }
